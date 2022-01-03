@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Project5.Models.News>
+
+@foreach (var item in Model)
+{
+
+    <div class="row">
+        <div class="card mb-3 mx-2" style="width: 1150px">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="@Url.Content(item.Picture)" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="p-1 bg-light rounded text-warning" style="font-weight: bold">@item.Category.Name</span>
+                        <h5 class="card-text mt-2">@item.Title</h5>
+                        <p class="mt-2">
+                            @item.Description
+                        </p>
+                        <p class="card-text" style="margin-top: 3em">
+                            <small class="text-muted">
+                                John Smith &nbsp;
+                                <i class="fas fa-clock"></i> @item.DatePosted
+                                <button class="btn btn-secondary mx-3">More Details..</button>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

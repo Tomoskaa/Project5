@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="~/Content/NewsCSS.css" rel="stylesheet" />
+
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body>
+    <div class="bg-dark p-1">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group" style="width: 20%; margin-top: 0.5em">
+                    <select class="form-control">
+                        <option>Languages</option>
+                        <option>English</option>
+                        <option>Macedonian</option>
+                        <option>Italian</option>
+                        <option>Albanian</option>
+                    </select>
+                </div>
+                @*<div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Choose Language
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>*@
+            </div>
+            <div class="col-sm-6 text-right" style="margin-left: -5em; margin-top: 1em">
+                <a href="#"><i class="fas fa-shopping-cart text-light mx-2"></i></a>
+                <a href="Account"><i class="fas fa-user text-light mx-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary p-2">
+        <div class="row">
+            <div class="col-4">
+                <h3 class="text-light"><i class="fas fa-newspaper "></i> News Website</h3>
+            </div>
+            <div class="col-4">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="col-4">
+                <div class="row mt-1 ml-5">
+                    <a href="Index" class="mx-2 text-light">Home</a>
+                    <a href="About" class="mx-2 text-light">About Us</a>
+                    <a href="GetNewsList" class="mx-2 text-light">Categories</a>
+                    <a href="Contact" class="mx-2 text-light">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+
+<footer class="container-fluid bg-dark pt-5 pb-3">
+    <div class="row mx-auto">
+        <div class="col-4 text-center ">
+            <h2 class="text-light"><i class="fas fa-newspaper text-secondary"></i> News Website</h2>
+            <p class="text-light pt-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+        </div>
+        <div class="col-4 text-center">
+            <h2 class="text-light">Categories</h2>
+            <ul class="list-inline pt-4">
+                <li><a class="text-light" href="#">Technology</a></li>
+                <li><a class="text-light" href="#">Fashion & Style</a></li>
+                <li><a class="text-light" href="#">Business</a></li>
+                <li><a class="text-light" href="#">Entertainment</a></li>
+                <li><a class="text-light" href="#">Science</a></li>
+                <li><a class="text-light" href="#">Health</a></li>
+                <li><a class="text-light" href="#">Travel</a></li>
+                <li><a class="text-light" href="#">Food & Wellness</a></li>
+            </ul>
+        </div>
+        <div class="col-4 text-center">
+            <h2 class="text-light">Contact</h2>
+            <ul class="list-inline pt-4">
+                <li>
+                    <i class="text-light mr-5 fas fa-map-marker-alt"></i><a class="text-light"
+                                                                            style="margin-right: 11.2em">
+                        Partizanski
+                        Odredi No.37,
+                        1000 Skopje North Macedonia
+                    </a>
+                </li>
+                <li>
+                    <i class="text-light mr-5 fas fa-phone"></i><a class="text-light" style="margin-right: 14.3em">077/924-906</a>
+                </li>
+                <li>
+                    <i class="text-light mr-5 fas fa-envelope"></i><a class="text-light" style="margin-right: 9em">newsWebsite@gmai.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr class="w-auto bg-light">
+    <div class="row" style="margin-left: 36%">
+        <a href="Index" class="mx-3 text-light">Home</a>
+        <a href="About" class="mx-3 text-light">About Us</a>
+        <a href="GetNewsList" class="mx-3 text-light">Categories</a>
+        <a href="Contact" class="mx-3 text-light">Contact</a>
+    </div>
+</footer>
+
+    <div class="bg-secondary p-2">
+        <p class="text-center pt-2 text-light">Copyright &copy; 2021 | Designed With By Ana Tomoska</p>
+        <div class="row">
+            <div class="icons container text-center">
+                <h6>Follow Us</h6>
+                <ul class="list-inline">
+                    <li class="list-inline-item rounded-circle px-3 py-2 bg-dark">
+                        <a href="#"><i class="text-light fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item rounded-circle px-3 py-2 bg-dark">
+                        <a href="#"><i class="text-light fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item rounded-circle px-3 py-2 bg-dark">
+                        <a href="#"><i class="text-light fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="list-inline-item rounded-circle px-3 py-2 bg-dark">
+                        <a href="#"><i class="text-light fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

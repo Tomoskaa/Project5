@@ -1,0 +1,30 @@
+﻿.text-title {
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.2em;
+    font-size: 50px;
+    font-family: "Baskerville Old Face";
+    text-align: center;
+    color: white;
+}
+
+.text-category {
+    position: absolute;
+    bottom: 8.5em;
+    left: 3.5em;
+    background-color: lightgray;
+    color: green;
+    width: 45px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.text-date {
+    position: absolute;
+    bottom: 2em;
+    left: 4.2em;
+    font-size: 15px;
+    font-family: "Baskerville Old Face";
+    text-align: center;
+    color: white;
+}
